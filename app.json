@@ -1,0 +1,117 @@
+{
+  "expo": {
+    "name": "Deoapp HR",
+    "slug": "deoapphris2-copy",
+    "version": "3.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "sdkVersion": "49.0.0",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "config": {
+        "googleMapsApiKey": "AIzaSyDJAmmCdQLr_jcUC_uKHbXgnTN88htMEuI"
+      },
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "We need your location for Attendance feature.",
+        "NSLocationAlwaysUsageDescription": "We need your location for Attendance feature.",
+        "NSLocationWhenInUseUsageDescription": "We need your location for Attendance feature.",
+        "isIosBackgroundLocationEnabled": false,
+        "NSPhotoLibraryUsageDescription": "Allow Deoapp to access your photos.",
+        "NSPhotoLibraryAddUsageDescription": "Allow Deoapp to save photos."
+      },
+      "bundleIdentifier": "com.deoapphris2.mobile", 
+      "runtimeVersion": {
+        "policy": "sdkVersion"
+      },
+      "buildNumber": "4",
+      "icon": "./assets/kotakputih_resized.png"
+    },
+    "android": {
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyAVdWCVovXJ6g0aajt5ZQPpK-nxH46YASg"
+        }
+      },
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/kotakputih.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.deoapphris2.mobile",
+      "permissions": [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.FOREGROUND_SERVICE",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.ACCESS_MEDIA_LOCATION"
+      ],
+      "runtimeVersion": {
+        "policy": "sdkVersion"
+      },
+      "versionCode": 5
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Deoapp to view your location for attendance",
+          "locationAlwaysPermission": "Allow Deoapp to view your location for attendance",
+          "locationWhenInUsePermission": "Allow Deoapp to view your location for attendance",
+          "isIosBackgroundLocationEnabled": false,
+          "isAndroidBackgroundLocationEnabled": false
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Deoapp to access your camera for attendance."
+        }
+      ],
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow Deoapp to access your microphone."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow Deoapp to access your photos.",
+          "savePhotosPermission": "Allow Deoapp to save photos.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The Deoapp accesses your photos to let you upload attachments."
+        }
+      ],
+      "sentry-expo"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "dc67ce99-8734-4475-ba6c-1aad9c7d9119"
+      }
+    },
+    "owner": "reinhartsamuel",
+    "updates": {
+      "url": "https://u.expo.dev/dc67ce99-8734-4475-ba6c-1aad9c7d9119"
+    }
+  }
+}
